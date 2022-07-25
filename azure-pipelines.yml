@@ -23,7 +23,7 @@ steps:
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
 - task: CopyFiles@2
-  displayName: Copy Files to Staging Directory
+  displayName: Copy Files
   inputs:
     SourceFolder: '$(agent.builddirectory)'
     Contents: '**/*.war'
